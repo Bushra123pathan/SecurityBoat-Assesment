@@ -1,0 +1,6 @@
+<h2>Movies</h2>
+<ul>
+  {% for movie in movies %}
+    <li>{{ movie.title }} - <a href="{% url 'seat_selection' movie.id %}">Book Now</a></li>
+  {% endfor %}
+</ul>
